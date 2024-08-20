@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>MiroTalk WebRTC Live Broadcast</title>
+        <title>Imago Sharing</title>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
         <div id="broadcastForm" class="broadcast center fadeIn">
             <div id="broadcastFormHeader" class="broadcast-header not-selectable">
                 <div class="broadcast-info">
-                    <i class="fas fa-user"></i> <span id="myName">Broadcaster</span> <i class="fas fa-eye"></i
+                    <i class="fas fa-user"></i> <span id="myName">Sender</span> <i class="fas fa-users"></i
                     ><span id="connectedPeers">0</span> <i class="fas fa-clock"></i> <span id="sessionTime">0s</span>
                 </div>
                 <div class="broadcast-header-buttons">
@@ -33,14 +33,14 @@
             </div>
             <label id="recordingLabel" class="pulse">🔴 REC: <span id="recordingTime">0S</span></label>
             <div id="broadcastButtons" class="broadcast-buttons">
-                <button id="settingsBtn"><i class="fa-solid fa-sliders"></i></button>
+                <button id="settingsBtn"><i class="fa-solid fa-gears"></i></button>
                 <button id="fullScreenOn"><i class="fas fa-expand-alt"></i></button>
                 <button id="fullScreenOff"><i class="fas fa-compress-alt"></i></button>
                 <button id="togglePIP"><i class="fas fa-images"></i></button>
-                <button id="viewersOpenForm"><i class="fas fa-eye"></i></button>
+                <button id="viewersOpenForm"><i class="fas fa-users"></i></button>
                 <button id="messagesOpenForm"><i class="fas fa-message"></i></button>
-                <button id="recordingStart"><i class="fas fa-record-vinyl"></i></button>
-                <button id="recordingStop" class="color-red"><i class="fas fa-record-vinyl"></i></button>
+                <button id="recordingStart"><i class="fas fa-hard-drive"></i></button>
+                <button id="recordingStop" class="color-red"><i class="fas fa-hard-drive"></i></button>
                 <button id="screenShareStart"><i class="fas fa-display"></i></button>
                 <button id="screenShareStop" class="pulse-bg"><i class="fa-solid fa-circle-stop"></i></button>
                 <button id="videoBtn"><i class="fas fa-video"></i></button>
@@ -50,7 +50,7 @@
             <div id="broadcasterSettingsForm" class="animate__animated animate__zoomIn">
                 <label class="not-selectable"><i class="fas fa-video"></i> Video source:</label>
                 <select id="videoSelect"></select>
-                <label class="not-selectable"><i class="fas fa-photo-film"></i> Video quality and fps:</label>
+                <label class="not-selectable"><i class="fas fa-images"></i> Video quality and fps:</label>
                 <div class="broadcast-quality-fps">
                     <select id="videoQualitySelect">
                         <option value="default">Default</option>
@@ -80,7 +80,7 @@
             <div id="messagesFormHeader" class="messages-header">
                 <div class="messages-buttons">
                     <button id="messagesCloseForm"><i class="fas fa-times"></i></button>
-                    <button id="messagesOpenViewersForm"><i class="fas fa-eye"></i></button>
+                    <button id="messagesOpenViewersForm"><i class="fas fa-users"></i></button>
                     <button id="messagesSave"><i class="fas fa-save"></i></button>
                     <button id="messagesClean"><i class="fas fa-trash"></i></button>
                 </div>

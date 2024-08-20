@@ -152,8 +152,8 @@ function shareRoomQR() {
         `<div class="qrRoomContainer">
             <canvas id="qrRoom"></canvas>
         </div>
-        <p>No need for apps, simply capture the QR code with your mobile camera Or Invite viewers to join your live broadcast by sending them the following URL</p>
-        <p style="color:#2196f3;">${roomURL}</p>`,
+        <p>No need for apps, simply capture the QR code with your mobile camera Or Invite viewers to join your room by sending them the following URL</p>
+        <p style="color:#F36124;">${roomURL}</p>`,
     );
     makeRoomQR();
 }

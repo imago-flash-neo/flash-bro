@@ -50,12 +50,16 @@ userName.value = window.localStorage.name || `User-${getRandomInt(99999)}`;
 // Handle broadcaster aka room id
 // =====================================================
 
-broadcasterId.value = broadcastID || window.localStorage.room || getUUID4();
+function generateRoomId() {
+    return (Math.floor(10000000 + Math.random() * 90000000)).toString();
+}
+
+broadcasterId.value = broadcastID || window.localStorage.room || generateRoomId();
 
 broadcasterIdRandom.addEventListener('click', setRandomId);
 
 function setRandomId() {
-    broadcasterId.value = getUUID4();
+    broadcasterId.value = generateRoomId();
 }
 
 // =====================================================

@@ -11,8 +11,12 @@
 }
 
 .fa-arrows-rotate:hover {
-    color: #2196f3;
+    color: #F36124;
     transition: var(--tran-05);
+}
+
+.hide-it {
+    display: none !important;
 }
 
 .home {
@@ -68,4 +72,14 @@
     border: none;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+}
+
+.home .title {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+
 }

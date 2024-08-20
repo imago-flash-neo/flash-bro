@@ -7,12 +7,12 @@
     --primary-color: #ffffff;
     --secondary-color: #f6f6f6;
     --text-color: #242424;
-    --msg-title-color: #2196f3;
+    --msg-title-color: #F36124;
     --input-color: #6e6c6c;
     --btn-color: #242424;
     --hover-color: #f6f6f6;
     --tran-05: all 0.5s ease;
-    --scrollbar-bg: #2196f3;
+    --scrollbar-bg: #F36124;
     --form-width: 50%; /* 85vw mobile */
     --form-height: 80%; /* 90vw mobile */
     --border: 0.1px solid #888888;
@@ -30,11 +30,11 @@ body.dark {
     --primary-color: #202123;
     --secondary-color: #44484b;
     --text-color: #f5f5f5;
-    --msg-title-color: #2196f3;
+    --msg-title-color: #F36124;
     --input-color: #a0a4a6;
     --btn-color: #fff;
-    --hover-color: #2196f3;
-    --scrollbar-bg: #2196f3;
+    --hover-color: #F36124;
+    --scrollbar-bg: #F36124;
     --border: 0.1px solid #888888;
     --border-radius: 1rem;
     --box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16), 0px 1px 4px rgba(0, 0, 0, 0.16);
@@ -170,11 +170,11 @@ video::-webkit-media-controls {
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+    background-color: #34A853;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #34A853;
 }
 
 input:checked + .slider:before {
@@ -223,7 +223,7 @@ input:checked + .slider:before {
 }
 
 .swal2-timer-progress-bar-container {
-    background: #2196f3;
+    background: #F36124;
 }
 
 table {
@@ -319,6 +319,10 @@ tr:nth-child(even) {
     -webkit-animation: pulse 3s ease-out;
     -webkit-animation-iteration-count: infinite;
     opacity: 0.5;
+}
+
+.pulse-bg i {
+    color: var(--btn-color) !important;
 }
 
 @-webkit-keyframes pulse {

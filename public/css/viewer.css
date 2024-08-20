@@ -63,3 +63,11 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
+
+#viewerButtons button i{
+    color: var(--msg-title-color);
+}
+
+#viewerButtons button:hover i{
+    color: var(--btn-color);
+}

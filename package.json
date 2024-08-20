@@ -1,7 +1,7 @@
 {
-    "name": "mirotalkbro",
-    "version": "1.0.51",
-    "description": "P2P WebRTC audio, video and screen live broadcast",
+    "name": "flashbro",
+    "version": "24.8.6",
+    "description": "WebRTC audio, video and screen sharing",
     "main": "app/server.js",
     "scripts": {
         "lint": "npx prettier --write .",
@@ -15,12 +15,12 @@
     },
     "keywords": [
         "WebRTC",
-        "Broadcast",
+        "Screen Sharing",
         "Live streaming",
         "Live broadcasting",
         "SocketIO"
     ],
-    "author": "Miroslav Pejic",
+    "author": "Imago Techs",
     "license": "AGPLv3",
     "dependencies": {
         "@sentry/integrations": "^7.114.0",

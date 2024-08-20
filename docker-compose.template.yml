@@ -2,12 +2,12 @@ version: '3'
 
 services:
     mirotalk:
-        image: mirotalk/bro:latest
+        image: realmad/flashbro:24.8.6
         build:
             context: .
             dockerfile: Dockerfile
-        container_name: mirotalkbro
-        hostname: mirotalkbro
+        container_name: flashbro
+        hostname: flashbro
         volumes:
             - .env:/src/.env:ro
             # These volumes are not mandatory, uncomment if you want to use it
@@ -16,3 +16,4 @@ services:
         restart: unless-stopped
         ports:
             - '${PORT}:${PORT}'
+

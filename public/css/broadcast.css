@@ -182,3 +182,11 @@
     box-shadow: var(--box-shadow);
     overflow: auto;
 }
+
+#broadcastButtons button i{
+    color: var(--msg-title-color);
+}
+
+#broadcastButtons button:hover i{
+    color: var(--btn-color);
+}
