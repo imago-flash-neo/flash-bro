@@ -21,9 +21,11 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: calc(100vh - 1em);
     background-color: var(--primary-color);
     overflow: auto; /* auto|hidden */
+    background: url(../assets/images/background-light.jpg) no-repeat fixed center;
+    background-size: cover;
 }
 
 body.dark {
@@ -38,6 +40,8 @@ body.dark {
     --border: 0.1px solid #888888;
     --border-radius: 1rem;
     --box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16), 0px 1px 4px rgba(0, 0, 0, 0.16);
+    background: url(../assets/images/background-dark.jpg) no-repeat fixed center;
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {
